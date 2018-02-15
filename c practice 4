@@ -1,0 +1,16 @@
+#pragma warning (disable:4996)
+#include <stdio.h>
+int square_value(int num)
+{
+return num *= num; 
+}
+void square_reference(int ptr[])
+{ 
+*ptr *= *ptr;
+}
+int main(void)
+{ 
+int num; scanf("%d", &num); 
+printf("%d\n", square_value(num));
+square_reference(&num); printf("%d", num);
+}
