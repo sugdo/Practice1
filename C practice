@@ -1,0 +1,58 @@
+#pragma warning (disable:4996)
+#include <stdio.h>
+
+int main(void)
+{
+	/*
+	char str[50],store;
+	int i=0,start,count;
+	printf("input:");
+	scanf("%s", str);
+	
+	while (str[i] != 0)
+	{
+		i++;
+
+	}
+
+	
+		count = i / 2;
+
+		for (start = 0; count > 0; count--)
+		{
+			store = str[start];
+			str[start] = str[i-1];
+			str[i-1] = store;
+			i--;
+			start++;
+			
+		}
+	
+
+	
+	
+
+	printf("%s", str);
+	*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	char*test[3] = { "AAAAAAAAA","BB","CC" };
+	printf("%u\n", &test[0]);
+	printf("%u\n", &test[1]);
+	printf("%u\n", &test[2]);
+
+
+
+}
