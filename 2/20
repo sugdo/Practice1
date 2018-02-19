@@ -1,0 +1,59 @@
+
+#include <stdio.h>
+
+
+
+
+void odd (int * ptr)
+{
+	int i;
+	printf("홀수 출력:");
+	for(i=0; i<10; i++)
+	{
+		if(ptr[i]%2==0)
+		printf("%d ",ptr[i]);
+
+	}
+
+	printf("\n");
+}
+
+void even (int * ptr)
+{
+	int i;
+	printf("짝수 출력:");
+	for(i=0; i<10; i++)
+	{
+		if(ptr[i]%2 != 0)
+		printf("%d ",ptr[i]);
+
+	}
+	printf("\n");
+
+}
+
+
+
+
+
+int main ()
+{
+
+
+
+
+
+	int i,arr[10];
+
+	for(i=0; i<10; i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	odd(arr);
+	even(arr);
+
+
+
+
+}
+
