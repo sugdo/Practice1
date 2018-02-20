@@ -1,0 +1,60 @@
+#pragma warning (disable:4996)
+#include <stdio.h>
+
+
+void ReculsiveBinary(int n)
+{
+	static int arr[50],i=0;
+
+	if (n > 0)
+	{
+		arr[i] = n % 2;
+		i++;
+     	ReculsiveBinary(n / 2);
+
+	}
+	else {
+
+		for (--i; i >= 0; i--)
+		{
+			printf("%d", arr[i]);
+
+		}
+
+
+	}
+
+}
+
+void Binary(int n)        
+{
+	int arr[50],i=0;
+	while (n>0)
+	{
+	
+		arr[i] = n % 2;
+		n = n / 2;
+		i++;
+
+	}
+	
+
+
+	for (--i; i>=0; i--)
+		printf("%d", arr[i]);
+}
+
+
+
+
+int main(void)
+{
+	int number;
+
+	scanf("%d", &number);
+	Binary(number);
+	printf("\n");
+	ReculsiveBinary(number);
+	
+	
+}
