@@ -1,0 +1,31 @@
+#pragma warning (disable:4996)
+#include <stdio.h>
+
+
+int main(void)
+{
+	int arr[10], number = 0, n, start = 0,end=9;
+	
+	while (number < 10)
+	{
+		scanf("%d", &n);
+		if (n % 2 == 0)
+		{
+			arr[end] = n;
+			end--;
+
+		}
+		else
+		{
+			arr[start] = n;
+			start++;
+		}
+		number++;
+	}
+
+
+	for (number = 0; number < 10; number++)
+		printf("%d ", arr[number]);
+
+	
+}
